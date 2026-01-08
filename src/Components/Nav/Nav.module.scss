@@ -1,0 +1,14 @@
+ul{
+    display: flex;
+    gap: 6rem;
+    list-style: none;
+
+
+}
+@media(max-width: 600px){
+    ul{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}

@@ -7,8 +7,9 @@ export const Nav = () => {
                         <nav>
                                 <ul className={style.ul}>
                                         <li><a href="#">Hjem</a></li>
-                                        <li><a href="#">Hvem er vi?</a></li>
-                                        <li><a href="#">Åbningstider</a></li>
+                                        <li><a href="#">Advokaterne</a></li>
+                                        <li><a href="#">om LeoLov</a></li>
+                                        <li><a href="#">Kontakt</a></li>
                                 </ul>
                         </nav>
                 </>

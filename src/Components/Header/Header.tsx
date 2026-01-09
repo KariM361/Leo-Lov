@@ -1,3 +1,5 @@
+import style from './Header.module.scss';
+
 interface HeaderProps {
     //? gør at de bliver optionale.
     src?: string;
@@ -8,10 +10,10 @@ interface HeaderProps {
 export function Header({src, alt, bgColor, text }: HeaderProps) {
 
     if (src && alt ) { 
-         return <img src={src} alt={alt}/>
+         return <img className={style.HeaderImages} src={src} alt={alt}/>
 }    else if (bgColor && text) 
          return (
-         <div style={{backgroundColor: bgColor}}>
+         <div className={style.HeaderText} style={{backgroundColor: bgColor}}>
             <p>{text}</p>
          </div>
 )

@@ -1,23 +1,26 @@
-import { Card } from './Components/Card/card'
+import { Card } from './Components/Card/Card'
 import { Nav } from './Components/Nav/Nav'
 import { Body } from './Components/Body/Body'
 import { Header } from './Components/Header/Header'
 import { Footer } from './Components/Footer/Footer'
-import Headerimg from './assets/headerimg.jpg'
-
-
+import {dataArray} from './Components/Data/Data'
+import{styles} from './Components/Styles/variabler.module.scss'
 import './App.css'
 
 function App() {
+ 
    return (
     <>
-     <Card>
+    {dataArray.map((item) =>{
+      return (
+         <Card>
       <Nav></Nav>
-      <Header src={Headerimg} alt={'tabel'}/>
+      <Header src={item.src} alt={'tabel'}/>
      <Body>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio omnis ullam commodi maiores quo neque ipsam, eaque quia error, porro facilis ab esse et ipsa vitae veritatis quasi iusto!</p>
+      <p>{item.bodyText}</p>
      </Body>
      <Footer>
+      <b>{item.footerText}</b>
       <ul>
         <li>Adresse</li>
         <h4>find os her:</h4>
@@ -34,11 +37,13 @@ function App() {
         <p>Generalle betingelser</p>
         <li>Social Medier</li>
         <h4>Facebook, Instagram</h4>
-
       </ul>
       <p>Dette er footer</p>
      </Footer>
      </Card>
+      )
+    } )} 
+      
     </>
   )
 }

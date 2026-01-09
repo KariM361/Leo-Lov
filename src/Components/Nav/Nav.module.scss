@@ -1,14 +1,40 @@
+
+nav {
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 1rem; /* luft mellem nav og streg */
+}
 ul{
+    
     display: flex;
     gap: 6rem;
     list-style: none;
+    font-family: 'Jura', sans-serif;
+   
 
 
+}
+li {
+  padding: 0 15px;
+  border-right: 1px solid var(--blue);
+
+}
+
+nav li:last-child {
+  border-right: none;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 @media(max-width: 600px){
     ul{
         flex-direction: column;
         gap: 2rem;
+    }
+    nav li{
+        border-right:none;
     }
 
 }

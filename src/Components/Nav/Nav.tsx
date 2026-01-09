@@ -10,7 +10,9 @@ export const Nav = () => {
                                         <li><a href="#">Advokaterne</a></li>
                                         <li><a href="#">om LeoLov</a></li>
                                         <li><a href="#">Kontakt</a></li>
+                                        <li>Leo-Lov</li>
                                 </ul>
+                               
                         </nav>
                 </>
         )

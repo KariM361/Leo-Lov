@@ -1,21 +1,12 @@
 import style from './Header.module.scss';
+import headerimage from '../../assets/Headerimg.jpg'
 
-interface HeaderProps {
-    //? gør at de bliver optionale.
-    src?: string;
-    alt?: string;
-    bgColor?: string;
-    text?: string;
-}
-export function Header({src, alt, bgColor, text }: HeaderProps) {
 
-    if (src && alt ) { 
-         return <img className={style.HeaderImages} src={src} alt={alt}/>
-}    else if (bgColor && text) 
-         return (
-         <div className={style.HeaderText} style={{backgroundColor: bgColor}}>
-            <p>{text}</p>
-         </div>
-)
-    return <p>No props supplied</p>
+export function Header() {
+    return(
+   <div className={style.HeaderImages}>
+    <img className={style.HeaderImages}src={headerimage} alt={"tabel"} />
+    <h1>Leo<span>-Lov</span></h1>
+   </div>
+    )
 }

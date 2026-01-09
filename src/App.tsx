@@ -4,6 +4,7 @@ import { Body } from './Components/Body/Body'
 import { Header } from './Components/Header/Header'
 import { Footer } from './Components/Footer/Footer'
 import {dataArray} from './Components/Data/data.ts'
+import HeaderImage from './assets/Headerimg.jpg'
 
 import './App.css'
 
@@ -11,40 +12,43 @@ function App() {
  
    return (
     <>
-    {dataArray.map((item) =>{
+     <Nav></Nav>
+      <Header src={HeaderImage} alt={'tabel'}/>
+     <Body>
+       {dataArray.map((item) =>{
       return (
          <Card key={item.id}>
-      <Nav></Nav>
-      <Header src={item.src} alt={'tabel'}/>
-     <Body>
-      <p>{item.bodyText}</p>
-      <section></section>
-     </Body>
-     <Footer>
-      <b>{item.footerText}</b>
+          <h2>{item.headerText}</h2>
+          <p>{item.bodyText}</p>
+          </Card>
+      )
+    } )} 
+    </Body>
+    <Footer>
+      <div>
       <ul>
         <li>Adresse</li>
         <h4>find os her:</h4>
         <p>Maldive rd 22,</p>
-        <p>seychelle Islands</p>
+        <p>seychelle Islands</p></div>
+        <div>
         <li>Kontakt</li>
         <h4>Kotakt os her:</h4>
         <p>email@mail.dk</p>
-        <p>Tlf:0192 3023</p>
+        <p>Tlf:0192 3023</p></div>
+        <div>
         <li>Politik</li>
         <h4>Vores politik:</h4>
         <p>Privatpolitik</p>
         <p>Cookiepolitik</p>
-        <p>Generalle betingelser</p>
+        <p>Generalle betingelser</p></div>
+        <div>
         <li>Social Medier</li>
         <h4>Facebook, Instagram</h4>
+        </div>
       </ul>
-      <p>Dette er footer</p>
-     </Footer>
-     </Card>
-      )
-    } )} 
-      
+          </Footer>
+        
     </>
   )
 }

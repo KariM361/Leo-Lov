@@ -1,10 +1,22 @@
 .cardStyle {
+ 
     display: flex;
     flex-direction: column;
     max-width: 280px;
+    height: 391px;
+    top: 679px;
+    left: 50px;
     margin: 8px;
     background-color:var(--white) ;
     border-radius: 8px;
     box-shadow: 1px 2px 4px rgba(33, 33, 33, 0.5);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    size: 16px;
+    line-height: 100%;
+    
+}
+section{
+    display: flex;
 
 }

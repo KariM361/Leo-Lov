@@ -25,28 +25,24 @@ function App() {
     } )} 
     </Body>
     <Footer>
-      <div>
       <ul>
         <li>Adresse</li>
         <h4>find os her:</h4>
         <p>Maldive rd 22,</p>
-        <p>seychelle Islands</p></div>
-        <div>
+        <p>seychelle Islands</p>
         <li>Kontakt</li>
         <h4>Kotakt os her:</h4>
         <p>email@mail.dk</p>
-        <p>Tlf:0192 3023</p></div>
-        <div>
+        <p>Tlf:0192 3023</p>
         <li>Politik</li>
         <h4>Vores politik:</h4>
         <p>Privatpolitik</p>
         <p>Cookiepolitik</p>
-        <p>Generalle betingelser</p></div>
-        <div>
+        <p>Generalle betingelser</p>
+       
         <li>Social Medier</li>
         <h4>Facebook, Instagram</h4>
-        </div>
-      </ul>
+               </ul>
           </Footer>
         
     </>

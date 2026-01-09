@@ -3,8 +3,8 @@ import { Nav } from './Components/Nav/Nav'
 import { Body } from './Components/Body/Body'
 import { Header } from './Components/Header/Header'
 import { Footer } from './Components/Footer/Footer'
-import {dataArray} from './Components/Data/Data'
-import{styles} from './Components/Styles/variabler.module.scss'
+import {dataArray} from './Components/Data/data.ts'
+
 import './App.css'
 
 function App() {
@@ -13,11 +13,12 @@ function App() {
     <>
     {dataArray.map((item) =>{
       return (
-         <Card>
+         <Card key={item.id}>
       <Nav></Nav>
       <Header src={item.src} alt={'tabel'}/>
      <Body>
       <p>{item.bodyText}</p>
+      <section></section>
      </Body>
      <Footer>
       <b>{item.footerText}</b>
